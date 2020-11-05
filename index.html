@@ -105,6 +105,40 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="/2020/11/04/node-gateway-ssr-multi-version-2/" itemprop="url">前端调度工具（内部培训PPT）</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-11-04T14:30:39.000Z" itemprop="datePublished">Nov 4 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/架构/">架构</a>
+        </span>
+        
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>书接上文 <a href="/2020/06/29/node-gateway-ssr-multi-version/">Node.js 服务支持多 SSR 版本</a>，之前的架构只是支持 SSR 应用的版本切换，最近为了支持微前端多版本切换（每个子应用也可自己配置自己的版本号），因为 SSR 和纯前端有较多差别所以又做了一套，之后会做一定合并，抽出底层，上层逻辑以插件形式注入。</p>
+<p><a href="/images/node-gateway-ssr-multi-version-2/FE-Schedule.pptx">前端调度工具 PPT 下载</a></p>
+        <p class="article-more-link">
+            <a href="/2020/11/04/node-gateway-ssr-multi-version-2/#more">Read More</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="/2020/09/28/debug-libuv/" itemprop="url">debug libuv</a>
         
     </h1>
@@ -248,42 +282,6 @@
 <p><img src="/images/lighthouse/report.png" alt="Lighthouse 报告"></p>
         <p class="article-more-link">
             <a href="/2020/07/07/lighthouse/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2020/06/29/node-gateway-ssr-multi-version/" itemprop="url">Node.js服务支持多SSR版本（适合测试环境）</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2020-06-29T06:59:30.000Z" itemprop="datePublished">Jun 29 2020</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/架构/">架构</a>
-        </span>
-        
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>通常，系统环境分为生产、测试和开发等多套，测试又可能因为验证不同的业务版本、BUG 部署 N 套， 意味着每套环境都会有一整套系统，从入口网关到大量的微服务节点，还有数据库等等。人力上需要有人去维护它们，无论是用于测试数还是系统的运维工作，每多一套系统都需要额外部署和购买大量资源，其中很多服务节点的版本是相同的，这都大大增加了成本。</p>
-<p>为了解决这样的问题，我们可以通过网关路由的方式，比如测试环境，所有的应用都部署在一套环境中，通过 HTTP Header 信息将不同的应用通过路由串联起来，大概如下：</p>
-<p>Server A V1 -&gt; Server B V1</p>
-<p>Server A V2 -&gt; Server B 其它版本</p>
-        <p class="article-more-link">
-            <a href="/2020/06/29/node-gateway-ssr-multi-version/#more">Read More</a>
         </p>
     
     </div>
